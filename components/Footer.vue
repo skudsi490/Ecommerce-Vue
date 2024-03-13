@@ -29,7 +29,7 @@
 
     <div id="FooterSub" class="w-full bg-[#333333] text-sm text-gray-400">
         <div class="max-w-[1200px] mx-auto p-4">
-            Copyright © 2022 Deals Deals. All rights reserved. License Number XYZ123. Safety Certification 12345678
+            Copyright © 2022 Deals Deals. All rights reserved. Developed by Sami Kudsi.
         </div>
     </div>
 </template>
