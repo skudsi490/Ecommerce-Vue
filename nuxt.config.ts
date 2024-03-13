@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import 'dotenv/config'; 
+
 export default defineNuxtConfig({
     pages: true,
     modules: [
