@@ -1,10 +1,8 @@
 import Stripe from 'stripe';
 
 export default defineEventHandler(async (event) => {
-    const body = await readBody(event);
-    const config = useRuntimeConfig(); 
-    console.log('Stripe Secret Key:', config.private.stripeSk); 
-    const stripe = new Stripe(config.private.stripeSk); 
+    const body = await readBody(event)
+    const stripe = new Stripe(process.env.STRIPE_SK_KEY);
 
     return await stripe.paymentIntents.create({
         amount: Number(body.amount),
